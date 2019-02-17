@@ -1,0 +1,13 @@
+extends ../layout.pug
+
+block content
+  h1 Lista de alumnos inscritos en ICO
+    each p in students
+      div
+        h6=p.name
+          div
+            img(width="100" src=p.imageURL)
+            h7=p.numberRegister
+            h6=p.year
+            
+                 

@@ -1,0 +1,16 @@
+extends ../layout.pug
+
+block content
+  h1 Ingresa un nuevo alumno
+  form(action="", method='POST')
+    input(type="text", name="name", placeholder="Nombre")
+    input(type="text", name="apePat", placeholder="Apellido Paterno")
+    input(type="text", name="apeMat", placeholder="Apellido Materno")
+    input(type="number", name="numberRegister", placeholder="Matricula")
+    input(type="text", name="genre", placeholder="Genero")
+    input(type="text", name="imageURL", placeholder="El url de la foto")
+    select(name="year")
+      option(value="PRIMERO") Primero
+      option(value="SEGUNDO") Segundo
+      option(value="TERCERO") Tercero
+    input(type="submit", value="Guardar🔥")
