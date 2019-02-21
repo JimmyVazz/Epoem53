@@ -8,6 +8,8 @@ const studentSchema = new Schema({
   apeMat: String,
   numberRegister: Number,
   genre: String,
+  adress: String,
+  finalGrade: Number,
   year: {
     type: String,
     enum: ['PRIMERO', 'SEGUNDO', 'TERCERO']
