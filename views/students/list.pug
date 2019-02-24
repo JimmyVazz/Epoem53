@@ -1,13 +1,13 @@
 extends ../layout.pug
 
 block content
-  h1 Lista de alumnos inscritos en ICO
+  h1.title Lista de alumnos inscritos en Epoem 53
+  section.list
     each p in students
-      div
-        h6=p.name
-          div
-            img(width="100" src=p.imageURL)
-            h7=p.numberRegister
-            h6=p.year
+      .card
+        strong=p.name
+        img(width="100" src=p.imageURL)
+        h7=p.numberRegister
+        h6=p.year
             
                  

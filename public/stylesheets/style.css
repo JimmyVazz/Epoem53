@@ -1,19 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif");
 body {
-  padding: 50px;
+  padding: 0px;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
+html {
+  margin: 0; }
+
 a {
-  color: #00B7FF; }
+  color: black;
+  text-decoration: none; }
 
 .cover {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("https://images.pexels.com/photos/289740/pexels-photo-289740.jpeg?cs=srgb&dl=chairs-classroom-college-289740.jpg&fm=jpg");
+  background-image: url("https://images.pexels.com/photos/256520/pexels-photo-256520.jpeg?cs=srgb&dl=apple-blur-book-stack-256520.jpg&fm=jpg");
   background-position: top;
   background-size: cover;
-  color: red;
+  color: black;
   height: 100vh;
   font-family: "Bree Serif";
   font-size: 2rem; }
@@ -22,5 +28,30 @@ a {
   transform: scale(1.2);
   background: linear-gradient(to right, orange, red);
   cursor: pointer; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  height: 55px; }
+
+.links {
+  margin-right: 20px; }
+
+.title {
+  margin-left: 50px;
+  font-size: 2rem; }
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 40px; }
 
 /*# sourceMappingURL=style.css.map */
