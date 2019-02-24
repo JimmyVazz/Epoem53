@@ -3,13 +3,16 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="shortcut icon" href="https://image.flaticon.com/icons/svg/1141/1141771.svg")
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
     link(href="/stylesheets/style.css" rel="stylesheet")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Epoem 53
   body
-    nav 
-      a(href="/") Home |
-      a(href="/students") Alumnos |
-      a(href="/students/new") Admin |
+    nav.nav
+      .links 
+        a(href="/") Home |
+        a(href="/students") Alumnos |
+        a(href="/students/teachers") Profesores |
+        a(href="/students/new") Administrar
 block content

@@ -6,3 +6,21 @@ body {
 a {
   color: #00B7FF;
 }
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.pexels.com/photos/289740/pexels-photo-289740.jpeg?cs=srgb&dl=chairs-classroom-college-289740.jpg&fm=jpg");
+  background-position: top;
+  background-size: cover;
+  color: red;
+  height: 100vh;
+  font-family: "Bree Serif";
+  font-size: 2rem;
+}
+.call-to-action:hover {
+  transform: scale(1.2);
+  background: linear-gradient(to right, orange, red);
+  cursor: pointer;
+}
