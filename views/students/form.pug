@@ -2,7 +2,7 @@ extends ../layout.pug
 
 block content
   h1 Ingresa un nuevo alumno
-  form(action="", method='POST') 
+  form(action="", method='POST').form 
     input(type="text", name="name", placeholder="Nombre")
     input(type="text", name="apePat", placeholder="Apellido Paterno")
     input(type="text", name="apeMat", placeholder="Apellido Materno")
@@ -13,4 +13,4 @@ block content
       option(value="PRIMERO") Primero
       option(value="SEGUNDO") Segundo
       option(value="TERCERO") Tercero
-    input(type="submit", value="Guardar")
+    input(type="submit", value="Registrar alumno")

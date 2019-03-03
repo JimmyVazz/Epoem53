@@ -10,6 +10,7 @@ const studentSchema = new Schema({
   genre: String,
   adress: String,
   finalGrade: Number,
+  procedenceMpio: String,
   year: {
     type: String,
     enum: ['PRIMERO', 'SEGUNDO', 'TERCERO']

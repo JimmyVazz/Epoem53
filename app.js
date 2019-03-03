@@ -18,7 +18,7 @@ mongoose
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
-  }); 
+  });
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
@@ -52,10 +52,15 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 
 
-const index = require('./routes/index');
+const index = require('./routes/index');  //Rutas del index
 app.use('/', index);
-const students = require('./routes/students')
+const students = require('./routes/students')  //Rutas de los estudiantes
 app.use('/students', students)
+//const teachers = require('./routes/teachers')  //Rutas de los profesores
+//app.use('/teachers', teachers)
+//const grades = require('./routes/grades')  //Rutas de las calificaciones
+//app.use('/grades', grades)
+
 
 
 module.exports = app;
