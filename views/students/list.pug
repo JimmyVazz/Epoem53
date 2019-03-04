@@ -2,12 +2,23 @@ extends ../layout.pug
 
 block content
   h1.title Lista de alumnos inscritos en Epoem 53
-  section.list
+  div.table.effect
+    span | Nombre | 
+    span | Apellido P. | 
+    span | Apellido M. | 
+    span | Municipio | 
+    span | Matricula |
+    span | Grado |
+    span | Grupo |
+  article.items
     each p in students
-      .card
+      div.table.effect
         strong=p.name
-        img(width="100" src=p.imageURL)
-        h7=p.numberRegister
-        h6=p.year
+        strong=p.apePat
+        strong=p.apeMat
+        h7=p.procedenceMpio
+        h7=p.numberRegister        
+        h7=p.year
+        h7=p.group
             
                  

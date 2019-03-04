@@ -66,7 +66,7 @@ a {
 .list {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
 .card {
@@ -80,4 +80,14 @@ a {
 .form {
   //display: flex;
   font-size: 2rem;
+}
+//lumnos lista
+.table {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+.items {
+  padding: 10px;
 }
