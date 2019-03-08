@@ -30,6 +30,19 @@ a {
   font-family: "Bree Serif";
   font-size: 2rem;
 }
+.cover-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?cs=srgb&dl=auditorium-benches-board-207691.jpg&fm=jpg");
+  background-position: top;
+  background-size: cover;
+  color: black;
+  height: 100vh;
+  font-family: "Bree Serif";
+  font-size: 2rem;
+}
 .call-to-action {
   width: 200px;
   height: 50px;
