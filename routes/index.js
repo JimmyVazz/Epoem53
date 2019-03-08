@@ -15,5 +15,9 @@ router.get('/help', (req, res) => {
   res.render('help')
 })
 
+router.post('/login-teacher/', (req, res) => { //Cambiar
+  res.render('./students/list')
+})
+
 
 module.exports = router;

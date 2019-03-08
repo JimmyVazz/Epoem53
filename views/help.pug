@@ -1,9 +1,14 @@
 extends layout.pug
 
 block content
-    h1.title ¿Algún problema? Envía un msj con tus dudas
-    form(action="", method="POST").form
-        input(type="text", name="name", placeholder="Nombre")
-        input(type="text", name="apePat", placeholder="Apellido")
-        input(type="msj", name="description", placeholder="Descripcion")  
-        input(type="submit", value="Enviar comentarios")
+    h1.title-login ¿Algún problema? Envía un msj con tus dudas
+    div
+    form(action="", method="POST").form2
+        div
+            input(type="text", name="name", placeholder="Nombre")
+        div
+            input(type="text", name="apePat", placeholder="Apellido")
+        div
+            input(type="msj", name="description", placeholder="Descripcion")  
+        div
+            input(type="submit", value="Enviar comentarios")
