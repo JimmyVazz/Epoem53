@@ -11,5 +11,9 @@ router.get('/login-teacher/', (req, res) =>{
 router.get('/login-student', (req, res) => {
   res.render('login-student')
 })
+router.get('/help', (req, res) => {
+  res.render('help')
+})
+
 
 module.exports = router;

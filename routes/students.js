@@ -7,11 +7,11 @@ const Student = require('../models/Student')
 //3. Update
 //4. Delete
 
-//Create
+//Create student form
 router.get('/new', (req, res)=>{
   res.render('students/form')
 })
-
+//Create student backend
 router.post('/new',(req, res)=>{
   console.log(req.body)
   Student.create(req.body)
@@ -20,7 +20,7 @@ router.post('/new',(req, res)=>{
     }).catch(e=>res.render('error'))
 })
 
-//Read
+//Read student backend
 router.get('/',(req, res)=>{
   Student.find()
     .then(students=>{

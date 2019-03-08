@@ -1,0 +1,9 @@
+extends layout.pug
+
+block content
+    h1.title ¿Algún problema? Envía un msj con tus dudas
+    form(action="", method="POST").form
+        input(type="text", name="name", placeholder="Nombre")
+        input(type="text", name="apePat", placeholder="Apellido")
+        input(type="msj", name="description", placeholder="Descripcion")  
+        input(type="submit", value="Enviar comentarios")
