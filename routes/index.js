@@ -5,8 +5,11 @@ const router  = express.Router();
 router.get('/', (req, res, next) => {
   res.render('index');
 });
-router.get('/login/', (req, res) =>{
-  res.render('login');
+router.get('/login-teacher/', (req, res) =>{
+  res.render('login-teacher');
+})
+router.get('/login-student', (req, res) => {
+  res.render('login-student')
 })
 
 module.exports = router;
