@@ -2,4 +2,15 @@ extends login-layout.pug
 
 block content
     section.cover-login
-        h1 Bienvenido al control escolar en linea de profesores
+        div
+        h1.title-login Bienvenido 
+        div
+            form(action="", method="POST").form2
+                div
+                    input(type="text", name="name", placeholder="Nombre")
+                div
+                    input(type="password", name="pass", placeholder="Contraseña")
+                div
+                    input(type="submit", value="Entrar")
+                div
+                    button.btn.btn-primary(type='submit') ¿No estás registrado? 
