@@ -18,11 +18,7 @@ mongoose
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
-<<<<<<< HEAD
   });
-=======
-  }); 
->>>>>>> f4714b7036f6410831806606347dcdeccbb021d8
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
