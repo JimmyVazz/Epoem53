@@ -1,23 +1,22 @@
 const express = require('express');
 const router  = express.Router();
+const Student = require('../models/Student')
 
 /* GET home page */
 router.get('/', (req, res, next) => {
   res.render('index');
 });
-router.get('/login-teacher/', (req, res) =>{
-  res.render('login-teacher');
+router.get('/login/teacher', (req, res) =>{
+  res.render('login');
 })
-router.get('/login-student', (req, res) => {
+router.get('/login/student', (req, res) => {
   res.render('login-student')
 })
 router.get('/help', (req, res) => {
   res.render('help')
 })
 
-router.post('/login-teacher/', (req, res) => { //Cambiar
-  res.render('./students/list')
-})
+
 
 
 module.exports = router;
