@@ -1,6 +1,7 @@
 const express = require('express');
 const router  = express.Router();
 const Student = require('../models/Student')
+const pool = require('../database')
 
 /* GET home page */
 router.get('/', (req, res, next) => {

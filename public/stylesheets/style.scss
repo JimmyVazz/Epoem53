@@ -9,18 +9,6 @@ body {
 html {
   margin: 0;
 }
-.title-login {
-  align-items: center;
-  justify-content: center;
-  color: black;
-  text-align: center;
-  font-size: 2rem;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
 
 .jumbotron{
   background-repeat: no-repeat;
@@ -34,4 +22,28 @@ a {
 }
 .btn .btn-primary .btn-lg{
   font-family: 'Courier New', Courier, monospace;
+}
+
+.simple-login-container{
+  width:300px;
+  max-width:100%;
+  margin:50px auto;
+  
+}
+.simple-login-container h2{
+  text-align:center;
+  font-size:20px;
+}
+
+.simple-login-container .btn-login{
+  background-color:#FF5964;
+  color:#fff;
+}
+a{
+  color:#fff;
+}
+
+.navbar{
+  background-color: #fff;
+  color: #fff;
 }
